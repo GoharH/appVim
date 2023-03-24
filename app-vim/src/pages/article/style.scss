@@ -1,0 +1,33 @@
+@import "../../assets//style//variables.scss";
+.article-image {
+    max-width: 950px;
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.page-box-margin {
+    margin: -15px;
+}
+
+.strategy-image {
+    width: 420px;
+    height: 275px;
+    border-radius: 5px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.colored-text {
+    max-width: 900px;
+    width: 100%;
+    background-color: $dark-white;
+    padding: 30px;
+    margin: 20px 0px 20px 90px;
+    p {
+        font-style: italic;
+    }
+}

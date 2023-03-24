@@ -1,0 +1,585 @@
+@import "../../assets//style//variables.scss";
+.home-banner-bg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0px 0px 0px 200px;
+    height: 660px;
+    @media (max-width: 991px) {
+        height: fit-content;
+    }
+}
+
+.banner-color-cover {
+    background-color: $dark-black-0-9;
+    width: 100%;
+    height: 100%;
+    border-radius: 0px 0px 0px 200px;
+    @media (max-width: 991px) {
+        height: fit-content;
+    }
+}
+
+.home-banner {
+    height: 655px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+    @media (max-width: 991px) {
+        height: fit-content;
+        flex-direction: column;
+        .G-padding-50 {
+            width: 100%;
+        }
+    }
+    .banner-main {
+        animation-name: moveMain;
+        animation-duration: 1.5s;
+        position: relative;
+        @keyframes moveMain {
+            from {
+                bottom: -200px;
+            }
+            to {
+                bottom: 0px;
+            }
+        }
+        h1 {
+            font-size: 52px;
+            color: $dark-grey;
+            margin-bottom: 15px;
+            @media (max-width: 767px) {
+                font-size: 42px;
+            }
+            @media (max-width: 576px) {
+                font-size: 35px;
+            }
+        }
+        .banner-main-text {
+            font-size: 14px;
+            margin-bottom: 20px;
+            color: $dark-grey;
+        }
+        input {
+            width: 300px;
+            height: 50px;
+            border: 1px solid $blue-light;
+            border-radius: 50px 0px 0px 50px;
+            margin: 10px 0px;
+            padding: 5px 15px;
+            color: $dark-grey;
+            @media (max-width: 767px) {
+                width: 200px;
+                height: 40px;
+            }
+            @media (max-width: 576px) {
+                width: 160px;
+            }
+        }
+        .G-error-text {
+            color: $red-error;
+            font-size: 13px;
+            margin: -10px 0px 10px 20px;
+        }
+        button {
+            width: 160px;
+            height: 50px;
+            // border: 1px solid $blue-bg;
+            background-color: $blue-t;
+            box-shadow: $blue-t 4px 3px 55px -10px;
+            border-radius: 0px 50px 50px 0px;
+            color: $white;
+            font-size: 14px;
+            font-weight: 600;
+            margin-left: -1px;
+            @media (max-width: 767px) {
+                width: 130px;
+                height: 40px;
+                font-size: 12px;
+            }
+            @media (max-width: 576px) {
+                width: 110px;
+                font-size: 12px;
+            }
+        }
+        button:hover {
+            box-shadow: none;
+        }
+    }
+    .banner-image {
+        max-width: 100%;
+        height: 645px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        animation-name: moveBannerImg;
+        animation-duration: 1.5s;
+        position: relative;
+        @keyframes moveBannerImg {
+            from {
+                right: -200px;
+            }
+            to {
+                right: 0px;
+            }
+        }
+        @media (max-width: 991px) {
+            height: 420px;
+        }
+        @media (max-width: 767px) {
+            height: 320px;
+        }
+        @media (max-width: 576px) {
+            height: 220px;
+        }
+    }
+}
+
+.takeaways {
+    background-color: $white;
+    padding: 60px 0px;
+    @media (max-width: 767px) {
+        padding: 40px 0px;
+    }
+    .product-main {
+        flex-direction: column;
+        margin-bottom: 50px;
+        @media (max-width: 767px) {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.home-title {
+    font-size: 36px;
+    margin-bottom: 18px;
+    color: #434c54;
+    text-align: center;
+    @media (max-width: 767px) {
+        font-size: 30px;
+    }
+    @media (max-width: 576px) {
+        font-size: 28px;
+    }
+}
+
+.home-section-box-main {
+    width: 500px;
+    font-size: 14px;
+    color: $light-grey;
+    text-align: center;
+    @media (max-width: 576px) {
+        width: 300px;
+    }
+}
+
+.key-class-part {
+    flex-wrap: wrap;
+    @media (max-width: 991px) {
+        .G-padding-25 {
+            width: 50%;
+        }
+    }
+    @media (max-width: 576px) {
+        .G-padding-25 {
+            width: 100%;
+        }
+    }
+}
+
+// ---------- schedule-section style start ---------
+.schedule-section {
+    background-color: $light-bright-grey;
+    padding: 70px 0px 30px;
+    @media (max-width: 767px) {
+        padding: 30px 0px 0px;
+    }
+}
+
+.schedul {
+    align-items: center;
+    @media (max-width: 991px) {
+        flex-direction: column;
+        .G-padding-50 {
+            width: 80%;
+        }
+    }
+    @media (max-width: 576px) {
+        .G-padding-50 {
+            width: 100%;
+        }
+    }
+}
+
+.schadule-image {
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation-name: moveLeft;
+    animation-duration: 1.5s;
+    position: relative;
+    @keyframes moveLeft {
+        from {
+            left: -200px;
+        }
+        to {
+            left: 0px;
+        }
+    }
+    @media (max-width: 991px) {
+        height: 400px;
+    }
+    @media (max-width: 767px) {
+        height: 250px;
+    }
+}
+
+.tabs-main {
+    padding: 20px 0px 0px;
+}
+
+.tabs-navigator {
+    animation-name: fadeInUp;
+    animation-duration: 1.5s;
+    position: relative;
+    ul {
+        @media (max-width: 767px) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+
+.tabs-list {
+    width: 150px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: $light-grey;
+    background-color: $white;
+    margin-right: 10px;
+    font-weight: 500;
+    @media (max-width: 767px) {
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+    span {
+        margin-right: 10px;
+    }
+}
+
+.tabs-list:hover {
+    color: $white;
+    background-color: $blue-t;
+}
+
+.tabs-main {
+    animation-name: fadeInUp;
+    animation-duration: 1.9s;
+    position: relative;
+}
+
+// ---------- previw part style start ----------
+.previw-section {
+    height: 600px;
+    padding: 50px 0px;
+    @media (max-width: 991px) {
+        height: 450px;
+        padding: 30px 0px;
+    }
+    @media (max-width: 767px) {
+        height: 420px;
+        padding: 30px 0px 0px;
+    }
+    .previw-part {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h3 {
+            color: $dark-grey;
+            text-align: center;
+        }
+    }
+}
+
+.video-part {
+    width: 1000px;
+    position: relative;
+    @media (max-width: 991px) {
+        width: 760px;
+        // position: initial;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+    }
+    @media (max-width: 767px) {
+        width: 564px;
+    }
+}
+
+.video-img {
+    width: 580px;
+    height: 380px;
+    border-radius: 5px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    position: absolute;
+    left: 130px;
+    animation-name: moveLeft;
+    animation-duration: 1.5s;
+    position: relative;
+    @keyframes moveLeft {
+        from {
+            left: -200px;
+        }
+        to {
+            left: 130px;
+        }
+    }
+    @media (max-width: 991px) {
+        width: 450px;
+        height: 280px;
+        left: 75px;
+    }
+    @media (max-width: 767px) {
+        width: 480px;
+        height: 310px;
+        left: 60px;
+    }
+    @media (max-width: 564px) {
+        width: 340px;
+        height: 220px;
+    }
+}
+
+.previw-main {
+    width: 450px;
+    height: 205px;
+    padding: 30px;
+    background-color: $dark-white;
+    border-radius: 5px;
+    position: absolute;
+    right: 16px;
+    top: 88px;
+    visibility: visible;
+    animation-name: fadeInRight;
+    animation-duration: 1.5s;
+    @media (max-width: 991px) {
+        width: 350px;
+        right: 25px;
+        top: 28px;
+    }
+    @media (max-width: 767px) {
+        display: none;
+    }
+    h4 {
+        font-size: 22px;
+        margin-bottom: 8px;
+        color: $dark-grey;
+    }
+    p {
+        color: $light-grey;
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+    ul {
+        margin-left: 17px;
+        li {
+            color: $light-grey;
+            font-size: 14px;
+            list-style: square;
+        }
+    }
+    ul li::marker {
+        color: $blue-t;
+    }
+}
+
+// --------------------pricing part style start -------------
+.pricing {
+    padding: 30px 0px 50px;
+}
+
+.pricing-main {
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.pricing-part {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px -20px;
+    @media (max-width: 767px) {
+        flex-direction: column;
+    }
+}
+
+.pricing-part:nth-child(3) {
+    border: 1px solid red;
+}
+
+.sale-box {
+    width: 175px;
+    height: 150px;
+    overflow: hidden;
+    margin: -392px 867px 242px;
+}
+
+.mark {
+    margin: 25px;
+    width: 230px;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    background-color: #3157dc;
+    color: #fff;
+    -webkit-transform: rotate(45deg) translate3d(0, 0, 0);
+    -ms-transform: rotate(45deg) translate3d(0, 0, 0);
+    transform: rotate(45deg) translate3d(0, 0, 0);
+}
+
+// .pricing-v1 .card .label {
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     width: 10.625rem;
+//     height: 10.625rem;
+//     overflow: hidden;
+// }
+// .mark {
+//     // position: absolute;
+//     width: 13.75rem;
+//     padding: 0.3125rem 0 0.3125rem 4.125rem;
+//     background-color: #3157dc;
+//     color: #fff;
+//     -webkit-transform: rotate(45deg) translate3d(0, 0, 0);
+//     -ms-transform: rotate(45deg) translate3d(0, 0, 0);
+//     transform: rotate(45deg) translate3d(0, 0, 0);
+// }
+// --------------------attended users part style start -------------
+.attenders {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h3 {
+        width: 1000px;
+        font-size: 22px;
+        margin: 35px 0px;
+        text-align: center;
+        animation-name: fadeInUp;
+        animation-duration: 2.5s;
+        position: relative;
+        @media (max-width: 991px) {
+            width: 760px;
+        }
+        @media (max-width: 767px) {
+            width: 500px;
+        }
+        @media (max-width: 576px) {
+            width: 350px;
+        }
+    }
+    button {
+        width: 210px;
+        height: 50px;
+        background-color: $blue-t;
+        border: 2px solid $blue-t;
+        box-shadow: $blue-t 4px 15px 55px -10px;
+        border-radius: 50px;
+        color: $white;
+        margin-top: 20px;
+        font-weight: 600;
+        animation-name: fadeInUp;
+        animation-duration: 3.9s;
+        position: relative;
+    }
+    button:hover {
+        background-color: transparent;
+        box-shadow: none;
+        color: $blue-t;
+        border: 2px solid $blue-t;
+        box-shadow: none;
+    }
+}
+
+.attended-users {
+    background-color: $light-bright-grey;
+    padding: 90px 0px;
+    margin: 30px 0px;
+    @media (max-width: 767px) {
+        padding: 50px 0px;
+    }
+}
+
+.statistic {
+    margin: -20px;
+    @media (max-width: 767px) {
+        flex-direction: column;
+    }
+}
+
+.statistic-box {
+    flex-direction: column;
+    color: $light-grey;
+    font-size: 14px;
+    margin: 0px 38px 20px;
+    animation-name: fadeInUp;
+    animation-duration: 1.3s;
+    position: relative;
+    @media (max-width: 767px) {
+        margin: 15px 0px 15px;
+    }
+    span {
+        font-size: 45px;
+        color: $blue-t;
+    }
+    .stat-num {
+        font-size: 64px;
+        font-weight: 600;
+        margin-bottom: -10px;
+        color: $dark-grey !important;
+    }
+}
+
+// ------------------------- carousel ----------------
+.carusele,
+.carusele-logos {
+    margin: 50px 0px;
+}
+
+.carusele-logos .home-title {
+    font-size: 29px;
+    margin-bottom: 25px;
+}
+
+.carusele-customer {
+    animation-name: fadeInUp;
+    animation-duration: 1.5s;
+    position: relative;
+    .custom-item {
+        width: 100%;
+        height: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+
+// ------------------------- article details ----------------
+.article-section {
+    margin: 50px 0px;
+    display: flex;
+}
+
+.article-boxes {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0px;
+}

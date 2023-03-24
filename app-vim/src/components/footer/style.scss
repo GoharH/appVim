@@ -1,0 +1,94 @@
+@import "../../assets//style//variables.scss";
+.footer-section {
+    background-image: linear-gradient($blue-bg, $dark-blue-bg);
+    color: $white;
+    font-size: 14px;
+    line-height: 2;
+    padding: 25px 0px;
+    .footer-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        @media (max-width: 991px) {
+            justify-content: center;
+            .G-padding-25 {
+                width: 50%;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+            }
+        }
+        @media (max-width: 767px) {
+            .G-padding-25 {
+                width: 70%;
+            }
+        }
+        @media (max-width: 576px) {
+            .G-padding-25 {
+                width: 100%;
+            }
+        }
+    }
+    a {
+        color: $white;
+        text-decoration: underline;
+    }
+    .footer-box {
+        margin: -15px;
+        h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+        .footer-links {
+            padding-left: 17px;
+            list-style: square;
+        }
+        .footer-contact li {
+            align-items: center;
+            span {
+                margin-right: 10px;
+                font-size: 16px;
+            }
+        }
+        .social-icons {
+            flex-wrap: wrap;
+            li {
+                width: 50px;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $white;
+                border-radius: 50%;
+                font-size: 22px;
+                margin: 0px 15px 15px 0px;
+                transition: 0.3s;
+                cursor: pointer;
+                a {
+                    color: $dark-blue-bg;
+                    text-decoration: none;
+                }
+                @media (max-width: 576px) {
+                    width: 30px;
+                    height: 30px;
+                    font-size: 15px;
+                }
+            }
+            li:hover {
+                a {
+                    color: $white;
+                }
+                background-color: $dark-blue-bg;
+                transition: 0.3s;
+            }
+        }
+    }
+    .copy-rights {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: 1px solid $dark-white;
+        padding: 20px;
+        margin-top: 20px;
+    }
+}

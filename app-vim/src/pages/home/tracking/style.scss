@@ -1,0 +1,16 @@
+@import "../../../assets//style//variables.scss";
+.tracking-main {
+    padding: 10px 0px;
+    color: $light-grey;
+    font-size: 14px;
+    p {
+        margin-bottom: 20px;
+    }
+    a {
+        color: $light-grey;
+        text-decoration: underline;
+    }
+    a:after {
+        content: ">>";
+    }
+}

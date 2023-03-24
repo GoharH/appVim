@@ -1,0 +1,44 @@
+@import "../../../assets//style//variables.scss";
+.article-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation-name: fadeInUp;
+    animation-duration: 1.5s;
+    position: relative;
+    .product-overflow {
+        width: 288px;
+        height: 190px;
+        overflow: hidden;
+        border-radius: 5px;
+    }
+    .product-image {
+        display: block;
+        width: 288px;
+        height: 190px;
+        border-radius: 5px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: 0.3s;
+    }
+    .product-image:hover {
+        transform: scale(1.2);
+        transition: 0.3s;
+    }
+    .artic-title {
+        font-size: 22px;
+        margin: 25px 0px 15px;
+        color: $dark-grey;
+        text-align: center;
+    }
+    .artic-main {
+        width: 288px;
+        height: 54px;
+        font-size: 14px;
+        color: $light-grey;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+}

@@ -1,0 +1,29 @@
+@import "../../../assets//style//variables.scss";
+.organize-main {
+    color: $light-grey;
+    font-size: 14px;
+    padding: 10px 0px;
+}
+
+.direct {
+    margin-bottom: 20px;
+}
+
+.list {
+    display: flex;
+    margin-bottom: 20px;
+    span {
+        width: 20px;
+        height: 20px;
+        border: 2px solid $green;
+        color: $green;
+        font-weight: 700;
+        padding: 3px 3px 5px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+        margin-top: 4px;
+    }
+}

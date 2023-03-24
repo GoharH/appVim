@@ -1,0 +1,29 @@
+@import "../../../assets//style//variables.scss";
+.card-box {
+    max-width: 320px;
+    width: 100%;
+    padding: 0px 20px;
+    flex-direction: column;
+    span {
+        display: block;
+        width: 96px;
+        height: 96px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 50%;
+    }
+    .card-description {
+        font-size: 16px;
+        font-style: italic;
+        color: $light-grey;
+        margin: 20px 0px;
+        text-align: center;
+    }
+    .card-name {
+        font-size: 16px;
+        font-weight: 600;
+        color: $light-grey;
+        text-align: center;
+    }
+}
