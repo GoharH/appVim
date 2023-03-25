@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import './style.scss';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
+// import Slider from "react-slick";
 import banner_bg from '../../assets/images/banner.jpg';
 import banner_img from '../../assets/images/hero-6.png';
 import KeyClass from "./keyClass";
@@ -13,17 +13,14 @@ import img4 from '../../assets/images/takeaways-4.svg';
 import articleImage1 from '../../assets/images/product-1.jpg';
 import articleImage2 from '../../assets/images/product-2.jpg';
 import articleImage3 from '../../assets/images/product-3.jpg';
-import schaduleImg from '../../assets/images/description-hero-6.png';
 import previwImg from '../../assets/images/featured-product-video-frame.jpg';
-import Schedul from "./schedul";
-import Tracking from "./tracking";
-import Organize from "./organize";
 import PricingBox from "./pricing";
-import Card from "./cards";
+// import Card from "./cards";
 import Carousel from "./carousel";
-import Swiper from "swiper";
+// import Swiper from "swiper";
 import CaruseleSlik from "./cards/swiper";
 import ArticleBox from "./article-box";
+import Tabs from "./tabs";
 
 
 
@@ -31,6 +28,7 @@ const Home = () => {
     const [user, setUser] = useState({
         mail: '',
     })
+
     const [errorUser, setErrorUser] = useState({
         mail: '',
     })
@@ -140,34 +138,7 @@ const Home = () => {
         </div>
         <div className="schedule-section">
             <div className="G-container">
-                <div className="schedul G-flex">
-                    <div className="G-padding-50">
-                        <div className="schadule-image" style={{ backgroundImage: `url(${schaduleImg})` }}></div>
-                    </div>
-                    <div className="G-padding-50">
-                        <div className="tabs-navigator">
-                            <ul className="G-flex">
-                                <li className="tabs-list G-flex">
-                                    <span className="icon-clock"></span>
-                                    <p>Schedule</p>
-                                </li>
-                                <li className="tabs-list G-flex">
-                                    <span className="icon-bullet-list"></span>
-                                    <p>Tracking</p>
-                                </li>
-                                <li className="tabs-list G-flex">
-                                    <span className="icon-calendar"></span>
-                                    <p>Organize</p>
-                                </li>
-                            </ul>
-                        </div>
-                        <div className="tabs-main">
-                            {/* <Schedul /> */}
-                            {/* <Tracking /> */}
-                            <Organize />
-                        </div>
-                    </div>
-                </div>
+                <Tabs />
             </div>
         </div>
         <div className="previw-section">
