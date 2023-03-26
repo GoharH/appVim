@@ -205,7 +205,7 @@
         padding: 30px 0px;
     }
     @media (max-width: 767px) {
-        height: 420px;
+        height: 320px;
         padding: 30px 0px 0px;
     }
     .previw-part {
@@ -231,7 +231,7 @@
         // align-items: center;
     }
     @media (max-width: 767px) {
-        width: 564px;
+        width: 100%;
     }
 }
 
@@ -243,7 +243,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     cursor: pointer;
-    position: absolute;
+    // position: absolute;
     left: 130px;
     animation-name: moveLeft;
     animation-duration: 1.5s;
@@ -264,7 +264,7 @@
     @media (max-width: 767px) {
         width: 480px;
         height: 310px;
-        left: 60px;
+        left: 0px;
     }
     @media (max-width: 564px) {
         width: 340px;
@@ -493,8 +493,18 @@
     display: flex;
 }
 
+.article-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .article-boxes {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     padding: 40px 0px;
+    @media (max-width: 564px) {
+        padding: 0px 0px;
+    }
 }

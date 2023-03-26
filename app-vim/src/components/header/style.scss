@@ -4,7 +4,10 @@
     padding: 20px 80px;
     justify-content: space-between;
     background-color: transparent;
-    margin-bottom: -90px;
+    margin-bottom: -100px;
+    @media (max-width: 767px) {
+        padding: 20px 20px;
+    }
     .logo-section {
         width: 150px;
         height: 50px;
@@ -25,6 +28,9 @@
     justify-content: space-between;
     z-index: 999999;
     transition: 0.3s;
+    @media (max-width: 767px) {
+        padding: 20px 20px;
+    }
     .logo-section {
         width: 150px;
         height: 50px;
@@ -131,11 +137,14 @@ nav {
 
 .menu {
     width: 100%;
+    // width: 100px;
     height: 500px;
     background-color: $light-bright-grey;
     position: absolute;
     top: 0;
     z-index: -1;
+    @media (max-width: 767px) {
+    }
 }
 
 // sliding menu

@@ -16,6 +16,9 @@
 .G-padding-33 {
     width: 33.3%;
     padding: 15px;
+    @media (max-width: 767px) {
+        width: 100%;
+    }
 }
 
 .G-padding-50 {

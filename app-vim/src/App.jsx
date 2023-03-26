@@ -2,6 +2,7 @@ import { Route, Routes } from 'react-router-dom';
 import './assets/style/index.scss';
 import Footer from './components/footer';
 import Header from './components/header';
+import HeaderNew from './components/header-new';
 import TitleArticle from './pages/article';
 import ContactUs from './pages/contact';
 import Home from './pages/home';
@@ -14,6 +15,7 @@ function App() {
   return (
     <div className="App">
       <Header />
+      {/* <HeaderNew /> */}
       <Routes>
         <Route path={'/home'} element={<Home />} />
         <Route path={'/terms'} element={<Terms />} />

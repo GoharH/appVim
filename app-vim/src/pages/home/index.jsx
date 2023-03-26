@@ -244,18 +244,24 @@ const Home = () => {
                 <div className="article-part">
                     <h3 className="home-title">Article Details</h3>
                     <div className="article-boxes">
-                        <ArticleBox
-                            image={articleImage1}
-                            title='Marketing Planner'
-                            main='Use our software application to analyse your market position and business environment.' />
-                        <ArticleBox
-                            image={articleImage2}
-                            title='Business Designer'
-                            main='Design your business with our software application to analyse your market position and business environment' />
-                        <ArticleBox
-                            image={articleImage3}
-                            title='Reporting Tools'
-                            main='Reporting tools are powerful software scripts created to serve the purpose of evaluating data and reporting' />
+                        <div className="G-padding-33">
+                            <ArticleBox
+                                image={articleImage1}
+                                title='Marketing Planner'
+                                main='Use our software application to analyse your market position and business environment.' />
+                        </div>
+                        <div className="G-padding-33">
+                            <ArticleBox
+                                image={articleImage2}
+                                title='Business Designer'
+                                main='Design your business with our software application to analyse your market position and business environment' />
+                        </div>
+                        <div className="G-padding-33">
+                            <ArticleBox
+                                image={articleImage3}
+                                title='Reporting Tools'
+                                main='Reporting tools are powerful software scripts created to serve the purpose of evaluating data and reporting' />
+                        </div>
                     </div>
                 </div>
             </div>
