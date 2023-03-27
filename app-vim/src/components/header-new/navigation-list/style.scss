@@ -1,0 +1,17 @@
+@import "../../../assets//style//variables.scss";
+.nav {
+    align-items: center;
+    @media (max-width: 767px) {
+        flex-direction: column;
+    }
+    li {
+        padding: 0px 15px;
+        cursor: pointer;
+    }
+    a {
+        color: $black;
+    }
+    li:hover a {
+        color: $light-grey;
+    }
+}

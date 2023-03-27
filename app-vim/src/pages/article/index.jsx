@@ -26,7 +26,7 @@ const TitleArticle = () => {
                 <p>
                     When you first register for a AppVim account, and when you use the Services, we collect some <span>Personal Information</span> about you such as:
                 </p>
-                <div className="G-flex">
+                <div className="G-flex strategy-list">
                     <div className="G-padding-50">
                         <ul>
                             <li>The geographic area where you use your computer and mobile devices</li>
@@ -53,7 +53,7 @@ const TitleArticle = () => {
                     </div>
                 </div>
             </div>
-            <div className="G-page-text G-flex">
+            <div className="G-page-text G-flex strategy-main">
                 <div className="G-padding-50">
                     <div className="page-box-margin">
                         <h3>Improving Product Strategy</h3>

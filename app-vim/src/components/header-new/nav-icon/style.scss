@@ -1,0 +1,27 @@
+@import "../../../assets//style//variables.scss";
+.nav-list-icons {
+    @media (max-width: 767px) {
+        flex-direction: column;
+    }
+    li {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $white;
+        border-radius: 50%;
+        margin-left: 10px;
+        font-size: 14px;
+        cursor: pointer;
+        a {
+            color: $blue-t;
+        }
+    }
+    li:hover {
+        background-color: $blue-t;
+        a {
+            color: $white;
+        }
+    }
+}

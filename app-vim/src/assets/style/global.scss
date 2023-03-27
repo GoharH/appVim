@@ -11,6 +11,9 @@
 .G-padding-25 {
     width: 25%;
     padding: 15px;
+    @media (max-width: 767px) {
+        width: 100%;
+    }
 }
 
 .G-padding-33 {
@@ -24,11 +27,17 @@
 .G-padding-50 {
     width: 50%;
     padding: 15px;
+    @media (max-width: 767px) {
+        width: 100%;
+    }
 }
 
 // in each page
 .G-section-padding {
     padding: 30px 0px;
+    @media (max-width: 564px) {
+        padding: 15px 0px;
+    }
 }
 
 .G-pages-banner {
@@ -36,9 +45,17 @@
     background-image: linear-gradient(to bottom right, $blue-bg, $blue-t);
     color: $white;
     margin-top: -130px;
+    padding: 10px;
+    @media (max-width: 564px) {
+        height: 200px;
+        margin-top: 0px;
+    }
     h1 {
         font-size: 52px;
-        // margin-top: 100px;
+        @media (max-width: 564px) {
+            font-size: 30px;
+            margin-top: 60px;
+        }
     }
 }
 
@@ -72,10 +89,22 @@
     line-height: 1.5;
     padding: 30px;
     margin-left: 60px;
+    @media (max-width: 991px) {
+        margin-left: 0px;
+    }
+    @media (max-width: 767px) {
+        padding: 20px;
+    }
+    @media (max-width: 564px) {
+        padding: 15px;
+    }
     h3 {
         font-size: 28px;
         color: $dark-grey;
         margin-bottom: 15px;
+        @media (max-width: 564px) {
+            font-size: 18px;
+        }
     }
     p {
         margin-bottom: 10px;
@@ -148,6 +177,13 @@
         color: $blue-t;
         box-shadow: none;
         transition: 0.3s;
+    }
+}
+
+.G-privacy-list {
+    @media (max-width: 767px) {
+        flex-direction: column;
+        align-items: center;
     }
 }
 

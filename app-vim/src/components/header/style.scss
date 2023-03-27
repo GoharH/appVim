@@ -135,18 +135,17 @@ nav {
     border-radius: 5px;
 }
 
-.menu {
-    width: 100%;
-    // width: 100px;
-    height: 500px;
-    background-color: $light-bright-grey;
-    position: absolute;
-    top: 0;
-    z-index: -1;
-    @media (max-width: 767px) {
-    }
-}
-
+// .menu {
+//     width: 100%;
+//     // width: 100px;
+//     height: 500px;
+//     background-color: $light-bright-grey;
+//     position: absolute;
+//     top: 0;
+//     // z-index: -1;
+//     @media (max-width: 767px) {
+//     }
+// }
 // sliding menu
 .hidden {
     display: none;

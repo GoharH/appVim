@@ -1,39 +1,50 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './style.scss';
-import { Link } from 'react-router-dom';
+import logoImg from '../../assets/images/logo-color.svg';
+import NavigationList from './navigation-list';
+import NavSocialIcon from './nav-icon/insex';
 
 const HeaderNew = () => {
+    const [isFixed, setIsFixed] = useState(false);
+
     const [open, setOpen] = useState(false);
 
     const handleMenuClick = () => {
         setOpen(!open);
     };
+    useEffect(() => {
+        const handleScroll = () => {
+            const position = window.pageYOffset;
+            if (position > 100) {
+                setIsFixed(true);
+            } else {
+                setIsFixed(false);
+            }
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+    return <header className={isFixed ? "fixed-header" : ""}>
 
-    return (
-        <header>
-            <div className="logo">
-                <h1>Your Website Name</h1>
-            </div>
-            <nav className={`menu ${open ? 'active' : ''}`}>
-                <ul>
-                    <li>
-                        <Link to="/">Home</Link>
-                    </li>
-                    <li>
-                        <Link to="/about">About</Link>
-                    </li>
-                    <li>
-                        <Link to="/contact">Contact</Link>
-                    </li>
-                </ul>
-            </nav>
-            <div className="menu-icon" onClick={handleMenuClick}>
-                <div className={`menu-icon__line ${open ? 'active' : ''}`}></div>
-                <div className={`menu-icon__line ${open ? 'active' : ''}`}></div>
-                <div className={`menu-icon__line ${open ? 'active' : ''}`}></div>
-            </div>
-        </header>
-    );
+        <div className='logo-section' style={{ backgroundImage: `url(${logoImg})` }}></div>
+
+        <div className='nav-list'>
+            <NavigationList className='nav' />
+            <NavSocialIcon />
+        </div>
+        <nav className={`menu ${open ? 'active' : ''}`} onClick={handleMenuClick}>
+            <NavigationList className='nav-burger' />
+            <NavSocialIcon />
+        </nav>
+        <div className="menu-icon" onClick={handleMenuClick}>
+            <div className={`menu-icon__line ${open ? 'active' : ''}`}></div>
+            <div className={`menu-icon__line ${open ? 'active' : ''}`}></div>
+            <div className={`menu-icon__line ${open ? 'active' : ''}`}></div>
+        </div>
+    </header>
+
 };
 
 export default HeaderNew 

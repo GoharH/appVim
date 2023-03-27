@@ -20,7 +20,7 @@ const Privacy = () => {
                 <p>
                     When you first register for a AppVim account, and when you use the Services, we collect some <span>Personal Information</span> about you such as:
                 </p>
-                <div className="G-flex">
+                <div className="G-flex G-privacy-list">
                     <div className="G-padding-50">
                         <ul>
                             <li>The geographic area where you use your computer and mobile devices</li>

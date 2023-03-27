@@ -14,8 +14,8 @@ import Terms from './pages/terms';
 function App() {
   return (
     <div className="App">
-      <Header />
-      {/* <HeaderNew /> */}
+      {/* <Header /> */}
+      <HeaderNew />
       <Routes>
         <Route path={'/home'} element={<Home />} />
         <Route path={'/terms'} element={<Terms />} />
