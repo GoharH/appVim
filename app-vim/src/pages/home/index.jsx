@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import './style.scss';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -85,6 +85,19 @@ const Home = () => {
     const handleVideoStart = () => {
 
     }
+    // pricing count animation js
+
+    const [count, setCount] = useState(0);
+
+    useEffect(() => {
+        if (count < 931) {
+            const interval = setInterval(() => {
+                setCount(count + 1);
+            }, .1);
+
+            return () => clearInterval(interval);
+        }
+    }, [count]);
 
     var settings = {
         dots: true,
@@ -194,19 +207,23 @@ const Home = () => {
                 <div className="attenders">
                     <div className="statistic G-center">
                         <div className="statistic-box G-center">
-                            <span className="icon-download3"></span>                            <p className="stat-num">931</p>
+                            <span className="icon-download3"></span>
+                            <p className="stat-num">{count}</p>
                             <p>Downloads</p>
                         </div>
                         <div className="statistic-box G-center">
-                            <span className="icon-happy"></span>                            <p className="stat-num">385</p>
+                            <span className="icon-happy"></span>
+                            <p className="stat-num">385</p>
                             <p>Happy Users</p>
                         </div>
                         <div className="statistic-box G-center">
-                            <span className="icon-cog"></span>                            <p className="stat-num">159</p>
+                            <span className="icon-cog"></span>
+                            <p className="stat-num">159</p>
                             <p>Good Reviews</p>
                         </div>
                         <div className="statistic-box G-center">
-                            <span className="icon-rocket"></span>                            <p className="stat-num">211</p>
+                            <span className="icon-rocket"></span>
+                            <p className="stat-num">211</p>
                             <p>Orders Received</p>
                         </div>
                     </div>

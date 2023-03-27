@@ -2,6 +2,9 @@ import React from "react";
 import './style.scss';
 
 const PricingBox = ({ title, price, duration, className1, className }) => {
+    // pricing count animation js
+
+
     return <div className="G-pricing-box">
         <p className="G-pricing-name">{title}</p>
         <div className="price-border">
