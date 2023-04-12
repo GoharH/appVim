@@ -39,7 +39,7 @@ function Carousel() {
         slidesToScroll: 1,
     };
 
-    console.log(customer)
+    // console.log(customer)
     return <div className='carusele-customer'>
         <Slider {...settings}>
             {customer.map((item, index) => {

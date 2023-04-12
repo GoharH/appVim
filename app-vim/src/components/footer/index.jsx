@@ -1,5 +1,6 @@
 import React from "react";
 import './style.scss';
+import { NavLink } from 'react-router-dom';
 
 const Footer = () => {
 
@@ -19,13 +20,19 @@ const Footer = () => {
                         <h3>Value Links</h3>
                         <ul className="footer-links">
                             <li>
-                                <a href="#">Terms & Conditions</a>
+                                <NavLink to="/terms" target='_blank' rel='noreferrer'>Terms & Conditions</NavLink>
+                                {/* rel = ”noopener” — это атрибут HTML, который добавляется ко всем ссылкам WordPress, выбранным для открытия на новой вкладке браузера. 
+                                Он также сопровождается атрибутом rel = ”noreferrer”. Эта функция введена в WordPress для устранения уязвимости безопасности, 
+                                которая может быть использована вредоносными веб-сайтами. */}
+                                {/* <a href="">Terms & Conditions</a> */}
                             </li>
                             <li>
-                                <a href="#">Privacy Policy</a>
+                                <NavLink to="/privacy" target='_blank' rel='noreferrer'>Privacy Policy</NavLink>
+                                {/* <a href="#">Privacy Policy</a> */}
                             </li>
                             <li>
-                                <a href="#">Article Details</a>
+                                <NavLink to="/article" target='_blank' rel='noreferrer'>Article Details</NavLink>
+                                {/* <a href="#">Article Details</a> */}
                             </li>
                         </ul>
                     </div>
@@ -40,7 +47,7 @@ const Footer = () => {
                             </li>
                             <li className="G-flex">
                                 <span className="icon-envelop"></span>
-                                <a href="mailto:contact@exaple.com">contact@exaple.com</a>
+                                <a href="mailto:contact@exaple.com" >contact@exaple.com</a>
                             </li>
                             <li className="G-flex">
                                 <span className="icon-phone1"></span>
@@ -54,27 +61,27 @@ const Footer = () => {
                         <h3>Social Media</h3>
                         <ul className="social-icons G-flex">
                             <li>
-                                <a href="https://www.facebook.com/">
+                                <a href="https://www.facebook.com/" target='_blank' rel='noreferrer'>
                                     <span className="icon-facebook"></span>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://twitter.com/">
+                                <a href="https://twitter.com/" target='_blank' rel='noreferrer'>
                                     <span className="icon-twitter"></span>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.google.com/">
+                                <a href="https://www.google.com/" target='_blank' rel='noreferrer'>
                                     <span className="icon-google-plus"></span>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.instagram.com/">
+                                <a href="https://www.instagram.com/" target='_blank' rel='noreferrer'>
                                     <span className="icon-instagram"></span>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.linkedin.com/">
+                                <a href="https://www.linkedin.com/" target='_blank' rel='noreferrer'>
                                     <span className="icon-linkedin"></span>
                                 </a>
                             </li>

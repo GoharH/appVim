@@ -14,7 +14,8 @@ const HeaderNew = () => {
     };
     useEffect(() => {
         const handleScroll = () => {
-            const position = window.pageYOffset;
+            // const position = window.pageYOffset;
+            const position = window.scrollY;
             if (position > 100) {
                 setIsFixed(true);
             } else {
