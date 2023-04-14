@@ -115,7 +115,7 @@ const Home = () => {
                             <div className="banner-main">
                                 <h1>Mobile App HTML Landing Page</h1>
                                 <p className="banner-main-text">We're passionate about creating the best template apps for personal development</p>
-                                <label>
+                                <label >
                                     <input type="text" name="mail" value={user.mail} onChange={handleChange} />
                                     <button onClick={handleConfirmClick}>Download Now</button>
                                 </label>

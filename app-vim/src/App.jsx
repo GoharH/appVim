@@ -1,21 +1,16 @@
 import { Route, Routes } from 'react-router-dom';
 import './assets/style/index.scss';
 import Footer from './components/footer';
-import Header from './components/header';
-import HeaderNew from './components/header-new';
+import Header from './components/header-new';
 import TitleArticle from './pages/article';
 import ContactUs from './pages/contact';
 import Home from './pages/home';
-import Organize from './pages/home/organize';
-import Schedul from './pages/home/schedul';
-import Tracking from './pages/home/tracking';
 import Privacy from './pages/privacy';
 import Terms from './pages/terms';
 function App() {
   return (
     <div className="App">
-      {/* <Header /> */}
-      <HeaderNew />
+      <Header />
       <Routes>
         <Route path={'/home'} element={<Home />} />
         <Route path={'/terms'} element={<Terms />} />
